@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./employee-list.css" />
+        <link rel="import" href="./Resource/font/GoogleSans-Medium.otf" />
+        <title>MISA CukCuk</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="menu">
+                <div class="menu-option">
+                    <img
+                        src="./Resource/img/toggle.png"
+                        alt="Toggle"
+                        class="menu-icon icon"
+                    />
+                    <img
+                        src="./Resource/cukcuk-logo.png"
+                        alt="CukCuk Logo"
+                        class="cukcuk-logo"
+                    />
+                </div>
+                <div class="menu-option">
+                    <img
+                        src="./Resource/icon/dashboard.png"
+                        alt=""
+                        class="menu-icon icon"
+                    />
+                    <div class="option-content">Tổng quan</div>
+                </div>
+                <div class="menu-option">
+                    <img
+                        src="./Resource/icon/report.png"
+                        alt=""
+                        class="menu-icon icon"
+                    />
+                    <div class="option-content">Báo cáo</div>
+                </div>
+                <div class="menu-option">
+                    <img
+                        src="./Resource/icon/dashboard.png"
+                        alt=""
+                        class="menu-icon icon"
+                    />
+                    <div class="option-content">Mua hàng</div>
+                </div>
+                <div class="menu-option">
+                    <img
+                        src="./Resource/icon/dic-employee.png"
+                        alt=""
+                        class="menu-icon icon"
+                    />
+                    <div class="option-content">Danh mục nhân viên</div>
+                </div>
+                <div class="menu-option">
+                    <img
+                        src="./Resource/icon/setting.png"
+                        alt=""
+                        class="menu-icon icon"
+                    />
+                    <div class="option-content">Thiết lập hệ thống</div>
+                </div>
+            </div>
+            <div class="employee-list">
+                <div class="header">
+                    <select
+                        name="restaurant-name"
+                        id="restaurant-name"
+                        class="select-dropdown"
+                    >
+                        <option value="Nhà hàng Biển Đông">
+                            Nhà hàng Biển Đông
+                        </option>
+                    </select>
+                    <div class="user">
+                        <img src="./Resource/icon/avatar-default.png" alt="" />
+                        <div id="username">Nguyễn Văn A</div>
+                        <img
+                            src="./Resource/icon/option.png"
+                            alt=""
+                            class="icon"
+                        />
+                    </div>
+                </div>
+                <div class="tools">
+                    <div class="employee-service">
+                        <h3>Danh sách nhân viên</h3>
+                        <div id="add-employee-btn">
+                            <img
+                                src="./Resource/icon/add.png"
+                                alt=""
+                                class="icon"
+                            />
+                            <div>Thêm nhân viên</div>
+                        </div>
+                    </div>
+                    <div class="search-and-refresh">
+                        <form>
+                            <div id="input-information">
+                                <img src="./Resource/icon/search.png" alt="" />
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại"
+                                />
+                            </div>
+                            <select
+                                name="department"
+                                id="department"
+                                class="select-dropdown"
+                            >
+                                <option value="Tất cả phòng ban">
+                                    Tất cả phòng ban
+                                </option>
+                                <option value="Phòng Marketing">
+                                    Phòng Marketing
+                                </option>
+                                <option value="Phòng kinh doanh">
+                                    Phòng Kinh Doanh
+                                </option>
+                            </select>
+                            <select
+                                name="position"
+                                id="position"
+                                class="select-dropdown"
+                            >
+                                <option value="Giám đốc">Giám đốc</option>
+                                <option value="Thu ngân">Thu ngân</option>
+                                <option value="Nhân viên Marketing">
+                                    Nhân viên Marketing
+                                </option>
+                            </select>
+                        </form>
+                        <div id="refresh">
+                            <img src="./Resource/icon/refresh.png" alt="" class="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <table id="emplyee-list-table">
+                        <thead>
+                            <tr>
+                                <th>Mã nhân viên</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th>Ngày sinh</th>
+                                <th>Điện thoại</th>
+                                <th>Email</th>
+                                <th>Chức vụ</th>
+                                <th>Phòng ban</th>
+                                <th>Mức lương cơ bản</th>
+                                <th>Tình trạng công việc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                            <tr>
+                                <td>NV-000001</td>
+                                <td>Hồ Văn Long</td>
+                                <td></td>
+                                <td>11/08/1978</td>
+                                <td>0940458449</td>
+                                <td>cuon@gmail.com</td>
+                                <td>Giám đốc</td>
+                                <td>Phòng Nhân sự</td>
+                                <td>17.739.391</td>
+                                <td>Đang thử việc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

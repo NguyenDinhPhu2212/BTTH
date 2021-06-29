@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+/* Css dropdown */
+.select-dropdown {
+    height: 40px;
+    border-color: #bbbbbb;
+    border-radius: 4px;
+}
+.select-dropdown option{
+    height: 40px;
+}
+.select-dropdown:focus{
+    outline: none;
+}
+/* Menu format CSS */
+.icon {
+    object-fit: contain;
+    height: 24px;
+}
+.menu {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e5e5e5;
+}
+
+.cukcuk-logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.menu-option {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-option:nth-child(1) {
+    height: 48px !important;
+}
+
+.menu-option > .menu-icon {
+    margin: 12px 10px 12px 16px;
+}
+
+.menu-option .option-content {
+    font-size: 13px;
+    font-style: medium;
+}
+/* tools */
+.tools .employee-service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+.tools .employee-service #add-employee-btn {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    background-color: #019160;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 0px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tools .employee-service #add-employee-btn:hover {
+    background-color: #2fbe8e;
+}
+.tools .employee-service #add-employee-btn:focus {
+    background-color: #01b075;
+}
+.tools .employee-service #add-employee-btn img {
+    margin-right: 8px;
+}
+.tools .search-and-refresh form #input-information {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    border: 1px solid #dbdeff;
+    border-radius: 5px;
+    font-size: 12px;
+}
+/* search and refresd */
+.tools .search-and-refresh{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+.tools .search-and-refresh #refresh{
+    border: 1px solid #BBBBBB;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tools .search-and-refresh form{
+    display: flex;
+    align-items: center;
+}
+.tools .search-and-refresh form select{
+    margin-left: 10px;
+}
+.tools .search-and-refresh form #input-information img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+    margin-left: 16px;
+    margin-right: 8px;
+}
+.tools .search-and-refresh form #input-information input {
+    width: 300px;
+    border: none;
+    color: #bbbbbb;
+}
+.tools .search-and-refresh form #input-information input:focus {
+    outline: none;
+}
+/* Display employee list */
+.employee-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.employee-list .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 49px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.employee-list .header #restaurant-name {
+    border: none;
+    margin-left: 24px;
+}
+.employee-list .header .user {
+    display: flex;
+    align-items: center;
+}
+
+.employee-list .header .user img:nth-child(1) {
+    height: 35px;
+    margin: 0 16px;
+}
+.employee-list .header .user #username {
+    margin-right: 16px;
+}
+.employee-list .header .user img:nth-child(3) {
+    margin-right: 16px;
+}
+/* Display employee table CSS */
+#emplyee-list-table {
+    border-spacing: 0;
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 16px;
+}
+tbody {
+    display: block;
+    max-height: 70vh;
+    overflow: auto;
+}
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+tbody::-webkit-scrollbar {
+    width: 5px;
+}
+
+tbody::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+}
+tbody tr:nth-child(odd) {
+    background-color: #e9ebee;
+}
+th,
+td {
+    height: 48px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 10px;
+}
